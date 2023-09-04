@@ -19,7 +19,7 @@ public interface PriceRepository extends JpaRepository<Price, Long> {
 	 * @param productId
 	 * @param brandId
 	 * @param startDate
-	 * @return
+	 * @return Price found
 	 */
 	@Query(nativeQuery = true, 
 			value = "SELECT "
